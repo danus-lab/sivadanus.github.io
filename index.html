@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivadanus S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gta-yellow: #f8c104;
+            --gta-orange: #f48024;
+            --gta-red: #d93d25;
+            --gta-purple: #7d337d;
+            --gta-blue: #3c54a4;
+            --gta-teal: #18989c;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1d1e22, #0a0a0c);
+            color: white;
+        }
+
+        .gta-font-title {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .gta-font-section {
+            font-family: 'Oswald', sans-serif;
+            text-shadow: 2px 2px 0px black;
+        }
+
+        .gta-card {
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 2px solid white;
+            box-shadow: 5px 5px 0px black;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gta-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0px black;
+        }
+
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: var(--gta-yellow);
+            margin-top: 8px;
+        }
+
+        .gta-gradient-text {
+            background-image: linear-gradient(to right, var(--gta-yellow), var(--gta-orange));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .contact-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="p-8">
+
+    <!-- Hero Section -->
+    <header class="text-center py-16 bg-cover bg-center rounded-lg relative" style="background-image: url('https://placehold.co/1200x600/1d1e22/f8c104?text=SIVADANUS+S');">
+        <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+        <div class="relative z-10 flex flex-col items-center">
+            <h1 class="text-6xl md:text-8xl gta-font-title text-white leading-none">
+                <span class="gta-gradient-text">SIVADANUS</span> S
+            </h1>
+            <p class="text-2xl md:text-3xl gta-font-section mt-4 text-white">FUTURE BUSINESS LEADER & TECHNOCRAT</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-16">
+        <section id="education" class="mb-16">
+            <h2 class="text-4xl gta-font-section section-header mb-8 text-white">EDUCATION</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="gta-card p-6 rounded-lg bg-[--gta-blue]">
+                    <h3 class="text-xl md:text-2xl font-bold">MBA, BITS School of Management, Mumbai</h3>
+                    <p class="mt-2 text-sm md:text-base">Pursuing (2026)</p>
+                </div>
+                <div class="gta-card p-6 rounded-lg bg-[--gta-red]">
+                    <h3 class="text-xl md:text-2xl font-bold">B.E. (Manufacturing Engineering), College of Engineering Guindy</h3>
+                    <p class="mt-2 text-sm md:text-base">University Gold Medallist (2023)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="work-experience" class="mb-16">
+            <h2 class="text-4xl gta-font-section section-header mb-8 text-white">WORK EXPERIENCE</h2>
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Caterpillar Inc - Operations Consultant -->
+                <div class="gta-card p-6 rounded-lg bg-[--gta-purple]">
+                    <h3 class="text-2xl gta-font-section">Caterpillar Inc - Operations Consultant | Tech Transformation</h3>
+                    <p class="text-sm mt-2 font-light italic">(Jul '23 - Jun '24)</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-sm">
+                        <li>Awarded **Mind's eye award** and **Spot award** for enhancing monitoring and strengthening safety failure modes analysis.</li>
+                        <li>Achieved **\$4 million** in cost savings through a collaborative robot system and **\$500,000** through a digital defect feedback loop.</li>
+                        <li>Increased efficiency by **25%** through a new framework and eliminated **~50 hours** of monthly manual tool retrieval.</li>
+                        <li>Reduced data errors by **18%** and accurately validated **500+ tables** with **1,00,000+ records**.</li>
+                    </ul>
+                </div>
+                <!-- Other Work Experiences -->
+                <div class="gta-card p-6 rounded-lg bg-[--gta-blue]">
+                    <h3 class="text-2xl gta-font-section">Caterpillar Inc - Brand Strategy and Marketing Intern</h3>
+                    <p class="text-sm mt-2 font-light italic">(Jul '21 - Jan '22)</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-sm">
+                        <li>Organically drove **2.7k+ unique visitors** and built a community of **4k+ people**.</li>
+                    </ul>
+                </div>
+                <div class="gta-card p-6 rounded-lg bg-[--gta-red]">
+                    <h3 class="text-2xl gta-font-section">Titan Engineering & Automation - Engineering Intern</h3>
+                    <p class="text-sm mt-2 font-light italic">(Jun '21 - Jul '21)</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-sm">
+                        <li>Reduced lead time by **20%** and saved **\$2000** by digitising engineering drawings.</li>
+                        <li>Improved throughput by **50%** through a faster measurement and verification mechanism.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-achievements" class="mb-16">
+            <h2 class="text-4xl gta-font-section section-header mb-8 text-white">KEY ACHIEVEMENTS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="gta-card p-6 rounded-lg bg-[--gta-teal]">
+                    <h3 class="text-2xl gta-font-section mb-2">Academic & Professional</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Ranked **1st** in Manufacturing Engineering department, Anna University.</li>
+                        <li>Awarded **Best Outgoing Student** and recognised for proficiency in Operations & Industrial Management.</li>
+                        <li>Winner of **Baja SAE India** and **Autodesk Design Challenge**.</li>
+                        <li>National Finalist in **Caterpillar Tech Quest**.</li>
+                        <li>Granted a **Patent** for "Face Mask for Police Taskforce."</li>
+                    </ul>
+                </div>
+                <div class="gta-card p-6 rounded-lg bg-[--gta-purple]">
+                    <h3 class="text-2xl gta-font-section mb-2">Leadership & Training</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Managed **\$10 million** worth of continuous improvement projects.</li>
+                        <li>Mentored **5+ brainstorming sessions** for assembly line operators.</li>
+                        <li>Designed a **100-hour training program** on lean manufacturing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="positions-of-responsibility" class="mb-16">
+            <h2 class="text-4xl gta-font-section section-header mb-8 text-white">POSITIONS OF RESPONSIBILITY</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="gta-card p-6 rounded-lg bg-[--gta-blue]">
+                    <h3 class="text-2xl gta-font-section mb-2">Head-Corporate Relations, Student Council</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Achieved **25 Lakh** in sponsorship, a **250% increase**.</li>
+                        <li>Forged a partnership with an **OTT platform**.</li>
+                    </ul>
+                </div>
+                <div class="gta-card p-6 rounded-lg bg-[--gta-red]">
+                    <h3 class="text-2xl gta-font-section mb-2">Placement Representative</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Secured **100% placement** for all eligible students.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="extracurricular" class="mb-16">
+            <h2 class="text-4xl gta-font-section section-header mb-8 text-white">EXTRACURRICULAR ACTIVITIES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="gta-card p-6 rounded-lg bg-[--gta-orange]">
+                    <h3 class="text-2xl gta-font-section mb-2">Football</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Represented Tamilnadu football team in the National Sub-Junior Football Championship.</li>
+                        <li>Captain of Krishnagiri district team, winning 2 State level championships.</li>
+                    </ul>
+                </div>
+                <div class="gta-card p-6 rounded-lg bg-[--gta-teal]">
+                    <h3 class="text-2xl gta-font-section mb-2">Community Initiatives</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Recognised as an **Active Citizen** and **Changemaker**.</li>
+                        <li>Conceived a tree plantation drive, planting **over 500 samplings**.</li>
+                    </ul>
+                </div>
+                <div class="gta-card p-6 rounded-lg bg-[--gta-yellow]">
+                    <h3 class="text-2xl gta-font-section mb-2">Karate</h3>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li>Awarded **Black Belt sho-grade**.</li>
+                        <li>Secured **2nd place** in kumite at the 1st State level Karate championship.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16 text-center">
+            <h2 class="text-4xl gta-font-section section-header inline-block mb-8 text-white">CONTACT</h2>
+            <div class="flex justify-center items-center space-x-8">
+                <a href="#" class="contact-icon transform transition-transform duration-300">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                </a>
+                <a href="#" class="contact-icon transform transition-transform duration-300">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.237 2.632 7.85 6.32 9.208.548.102.747-.238.747-.525 0-.258-.01-1.055-.015-2.07-.256.096-.957.262-1.157.199-.208-.065-.54-.31-.912-.51-.371-.2-.844-.486-1.125-.668-.282-.182-.69-.425-.012-.435.632-.012 1.058.468 1.205.679.743 1.272 1.944 1.22 2.656.938.075-.548.29-1.22.463-1.492-1.85-.208-3.79-1.298-3.79-4.28 0-.946.33-1.72.87-2.327-.088-.206-.38-1.03.083-2.28 0 0 .713-.23 2.33.882.68-.188 1.396-.282 2.112-.285.716.003 1.432.097 2.112.285 1.615-1.112 2.327-.882 2.327-.882.463 1.25.17 2.074.08 2.28.543.607.873 1.38.873 2.327 0 2.985-1.94 4.07-3.798 4.27.298.258.56.76.56 1.53 0 1.102-.01 1.988-.01 2.256 0 .288.197.632.75.523C20.366 19.852 23 16.237 23 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                </a>
+                <a href="#" class="contact-icon transform transition-transform duration-300">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.772 1.69 4.974 4.974.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.252-1.69 4.772-4.974 4.974-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.772-1.69-4.974-4.974-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.252 1.69-4.772 4.974-4.974 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.203-6.78 2.647-6.983 6.983-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.203 4.358 2.647 6.78 6.983 6.983 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c4.358-.203 6.78-2.647 6.983-6.983.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.203-4.358-2.647-6.78-6.983-6.983-1.28-.058-1.688-.072-4.947-.072zm0 6.868c-2.428 0-4.392 1.964-4.392 4.392s1.964 4.392 4.392 4.392 4.392-1.964 4.392-4.392-1.964-4.392-4.392-4.392zm0 7.277c-1.597 0-2.885-1.288-2.885-2.885s1.288-2.885 2.885-2.885 2.885 1.288 2.885 2.885-1.288 2.885-2.885 2.885zm5.18-7.889c0-.527-.427-.954-.954-.954-.527 0-.954.427-.954.954 0 .527.427.954.954.954.527 0 .954-.427.954-.954z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="text-center py-8 text-gray-400">
+        &copy; 2025 Sivadanus S. All Rights Reserved.
+    </footer>
+</body>
+</html>
